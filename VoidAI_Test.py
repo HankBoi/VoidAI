@@ -10,7 +10,7 @@ def sim_question(user_q, data):
             highest_score = score
             best_match = q
     return best_match, highest_score
-question_data_path= "C:/Users/User/VoidAI/VodAI_Datas/question_data.json"
+question_data_path= "C:/Users/User/VoidAI/VoidAI_Datas/question_data.json"
 if not os.path.exists(question_data_path):
     with open(question_data_path, 'w', encoding='utf-8') as file:
         json.dump({}, file)
@@ -38,4 +38,5 @@ while True:
     with open(question_data_path, 'w', encoding='utf-8') as file:
         json.dump(existing_questions, file)
     if question in existing_questions:
+
         print("Answer:", existing_questions[question])
