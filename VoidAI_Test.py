@@ -37,6 +37,4 @@ while True:
         print("This question already exists in the database.")
     with open(question_data_path, 'w', encoding='utf-8') as file:
         json.dump(existing_questions, file)
-    if question in existing_questions:
 
-        print("Answer:", existing_questions[question])
